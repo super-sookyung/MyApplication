@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/intro_2"
+        android:layout_marginTop="150dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/intro_2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/introtext_2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        tools:text="디노와 함꼐"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/notosans_bold"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/introtext_22"
+        android:layout_below="@+id/introtext_2"
+        android:layout_width="221dp"
+        android:layout_height="47dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        tools:text="목표와 습관을 위해 노력할수록
+디노 친구들이 어른이 될 수 있어요."
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/notosans_regular"
+        />
+
+    <ImageView
+        android:layout_toLeftOf="@+id/intro_22"
+        android:layout_marginRight="13dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/gray_circle"
+        android:layout_marginTop="660dp" />
+
+    <ImageView
+        android:id="@+id/intro_22"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/green_circle"
+        android:layout_marginTop="660dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_toRightOf="@+id/intro_22"
+        android:layout_marginLeft="13dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/gray_circle"
+        android:layout_marginTop="660dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="63dp"
+    android:layout_marginTop="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:layout_marginLeft="18dp"
+            android:layout_width="6dp"
+            android:layout_height="54dp"
+            android:src="@drawable/note_background"/>
+        <TextView
+            android:paddingTop="6dp"
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:paddingLeft="50dp"
+            android:text="물 8컵 마시기"
+            android:textSize="17sp"
+            android:fontFamily="@font/notosans_regular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/ic_radio_button_unchecked_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Gray"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel_note"
+            android:textColor="@color/colorDino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="취소"
+            android:layout_margin="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목표 생성"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:fontFamily="@font/notosans_bold"
+            android:textStyle="bold"
+            android:textColor="@color/realblack"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/colorDino"
+            app:showAsAction="ifRoom"
+            android:id="@+id/add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/notosans_demilight"
+            android:layout_margin="4dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목표"
+        android:textSize="16sp"
+        android:fontFamily="@font/notosans_medium"
+        android:textColor="@color/realblack"/>
+    <EditText
+        android:layout_marginLeft="14dp"
+        android:id="@+id/edit_text_title"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 기간"
+        android:textSize="16sp"
+        android:fontFamily="@font/notosans_medium"
+        android:textColor="@color/realblack"/>
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/notosans_demilight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Gray"
+        android:text="설정하지 않는다면 계속 반복됩니다."/>
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="할일 추가"
+        android:textSize="16sp"
+        android:fontFamily="@font/notosans_medium"
+        android:textColor="@color/realblack"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="14dp"
+        android:textSize="15sp"
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="목표를 위해 세부 할일을 추가해보세요."
+        android:inputType="textMultiLine"
+        android:layout_marginRight="25dp"/>
+
+        <Button
+            android:background="@drawable/ic_task_smalltask_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목표 실행일"
+        android:textSize="16sp"
+        android:fontFamily="@font/notosans_medium"
+        android:textColor="@color/realblack"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="월"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="화"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/wed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="수"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/thu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="165dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="목"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/fri"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="210dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="금"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="255dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="토"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sun"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="일"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Priority:"-->
+        <!--android:textAppearance="@android:style/TextAppearance.Medium" />-->
+
+
+    <!--<DatePicker-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"></DatePicker>-->
+    <!--<DatePicker-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"></DatePicker>-->
+
+</LinearLayout>

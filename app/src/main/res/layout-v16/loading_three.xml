@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_three"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:id="@+id/intro_3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/intro_3" />
+
+    <TextView
+        android:id="@+id/introtext_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/다양한"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:fontFamily="@font/notosans_bold"/>
+
+    <TextView
+        android:id="@+id/introtext_33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        tools:text="@string/한친구"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/notosans_regular"/>
+
+    <Button
+        android:id="@+id/intro_33"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/notosans_regular"
+        android:text="디노 시작하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
