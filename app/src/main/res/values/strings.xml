@@ -4,4 +4,6 @@
     <string name="한친구">한 친구를 성장시켜 주면\n
         새로운 친구를 만날 수 있어요.</string>
     <string name="button_save">저장</string>
+    <string name="facebook_app_id">2276589076002739</string>
+    <string name="fb_login_protocol_scheme">fb2276589076002739</string>
 </resources>

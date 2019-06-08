@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="14dp"
+            android:textSize="15sp"
+            android:id="@+id/edit_text_description"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:hint="목표를 위해 세부 할일을 추가해보세요."
+            android:inputType="textMultiLine"
+            android:layout_marginRight="25dp"/>
+
+
+        <Button
+            android:id="@+id/smalltask_add"
+            android:layout_marginLeft="335dp"
+            android:background="@drawable/smalltask"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/small_recycler">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <!--<Button-->
+        <!--android:layout_marginLeft="14dp"-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:background="@drawable/small_dayofweek"/>-->
+
+
+</LinearLayout>
+

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final Button complete_btn = findViewById( R.id.complete_btn );
 
         Button buttonAddNote = findViewById(R.id.button_add_note);
         buttonAddNote.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, EDIT_NOTE_REQUEST);
             }
         });
+
+//        CompleteSet( complete_btn );        CompleteSet( complete_btn );
     }
 
     @Override
@@ -111,6 +114,23 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Note not saved", Toast.LENGTH_SHORT).show();
         }
     }
+
+
+//    public void CompleteSet(View button) {
+//        final TextView title = (TextView)findViewById( R.id.text_view_title);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            int clickcount = 0;
+//            public void onClick(View button) {
+//                clickcount += 1;
+//                if (clickcount % 2 != 0) {
+//                    button.setSelected( true );
+//                    title.setTextColor( Color.GRAY );
+//                } else {
+//                    button.setSelected( false );
+//                }
+//            }
+//        });
+//    }
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {

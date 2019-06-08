@@ -41,8 +41,11 @@ public class AddNoteActivity extends AppCompatActivity {
         final Button fri = (Button)findViewById( R.id.fri );
         final Button sat = (Button)findViewById( R.id.sat );
         final Button sun = (Button)findViewById( R.id.sun );
+        final Button smalladd = (Button)findViewById( R.id.smalltask_add);
         cancel = (TextView)findViewById( R.id.cancel_note );
         add_note = (TextView)findViewById( R.id.add_note );
+
+
 
 
 //        numberPickerPriority = findViewById(R.id.number_picker_priority);
@@ -65,50 +68,13 @@ public class AddNoteActivity extends AppCompatActivity {
 
 
 
-
-
-        mon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mon.setSelected(true);
-            }
-        });
-        tue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tue.setSelected(true);
-            }
-        });
-        wed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                wed.setSelected(true);
-            }
-        });
-        thu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                thu.setSelected(true);
-            }
-        });
-        fri.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fri.setSelected(true);
-            }
-        });
-        sat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sat.setSelected(true);
-            }
-        });
-        sun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sun.setSelected(true);
-            }
-        });
+        DaySet( mon );
+        DaySet( tue );
+        DaySet( wed );
+        DaySet( thu );
+        DaySet( fri );
+        DaySet( sat );
+        DaySet( sun );
 
         cancel.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -125,8 +91,30 @@ public class AddNoteActivity extends AppCompatActivity {
             }
         } );
 
+        smalladd.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        } );
 
 
+
+    }
+
+    public void DaySet(View button) {
+
+        button.setOnClickListener(new View.OnClickListener() {
+            int clickcount = 0;
+            public void onClick(View button) {
+                clickcount += 1;
+                if (clickcount % 2 != 0) {
+                    button.setSelected( true );
+                } else {
+                    button.setSelected( false );
+                }
+            }
+            });
     }
 
     private void saveNote() {
@@ -152,6 +140,8 @@ public class AddNoteActivity extends AppCompatActivity {
         setResult(RESULT_OK, data);
         finish();
     }
+
+
 
 
 //    public boolean onCreate(TextView view){

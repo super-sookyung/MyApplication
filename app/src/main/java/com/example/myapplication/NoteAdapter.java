@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.recyclerview.extensions.ListAdapter;
 import android.support.v7.util.DiffUtil;
@@ -11,6 +12,10 @@ import android.widget.TextView;
 
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
     private OnItemClickListener listener;
+    private TextView title;
+
+
+
 
     public NoteAdapter() {
         super(DIFF_CALLBACK);
@@ -32,9 +37,10 @@ public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
 
     @NonNull
     @Override
-    public NoteHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public NoteHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.note_item, parent, false);
+
         return new NoteHolder(itemView);
     }
 
@@ -73,11 +79,30 @@ public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
         }
     }
 
+
+
     public interface OnItemClickListener {
         void onItemClick(Note note);
+
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
     }
+    public void CompleteSet(View button) {
+        title = (TextView) title.findViewById( R.id.text_view_title );
+        button.setOnClickListener(new View.OnClickListener() {
+            int clickcount = 0;
+            public void onClick(View button) {
+                clickcount += 1;
+                if (clickcount % 2 != 0) {
+                    button.setSelected( true );
+                    title.setTextColor( Color.GRAY );
+                } else {
+                    button.setSelected( false );
+                }
+            }
+        });
+    }
+
 }

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="월"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="화"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/wed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="수"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/thu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="165dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="목"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/fri"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="210dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="금"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="255dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="토"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sun"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/selecter_btn"
+            android:fontFamily="@font/notosans_demilight"
+            android:text="일"
+            android:textColor="@color/realblack"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
+
